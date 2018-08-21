@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang= "pt-BR">
+	<head>
+		<title>Quarta Aula - exerc</title>
+		<link rel="stylesheet" type="text/css" href= "estilo.css" />
+	</head>
+	<body >
+		<header>
+			<h1 align="center">Cadastro de candidatos a deputado estadual do estado de São Paulo</h1>
+		</header>
+
+		<section>
+			<form action="http://andrebordignon.esy.es/php/incluicandidato.php" method="post">
+				
+				<fieldset >
+					<legend>Dados Pessoais:</legend>
+
+						Nome: <input type="text" name="nome" required /> </br></br>
+
+						Sexo:<input type="radio" name="sexo" value="masculino" required/> Masculino
+							 <input type="radio" name="sexo" value="feminino" /> Feminino
+						</br></br>
+
+						Data de nascimento: <input type="date" name="dataNasc" required></br></br>
+
+						CPF: <input type="number" name="cpf" required /> </br></br>
+
+						E-mail:<input type="email" name="email" required>
+
+						Senha:<input type="password" name="senha" required></br></br>
+
+						Descrição </br>
+							<TEXTAREA rows="3" cols="50" name="descrição">Digite aqui suas descrição</TEXTAREA></br></br>
+
+				</fieldset>
+
+				<fieldset >
+					<legend>Endereço:</legend></br>
+						
+						Rua: <input type="text" name="rua" required />
+
+						Numero:<input type="number" name="numero" required></br></br>
+
+						Bairro: <input type="text" name="bairro" required /> 
+
+						Cidade: <input type="text" name="cidade" required /> </br></br>
+
+						Estado:<select name="estado" required>
+										<option value="AC">Acre</option>
+										<option value="AL">Alagoas</option>
+										<option value="AP">Amapá</option>
+										<option value="AM">Amazonas</option>
+										<option value="BA">Bahia</option>
+										<option value="CE">Ceará</option>
+										<option value="DF">Distrito Federal</option>
+										<option value="ES">Espírito Santo</option>
+										<option value="GO">Goiás</option>
+										<option value="MA">Maranhão</option>
+										<option value="MT">Mato Grosso</option>
+										<option value="MS">Mato Grosso do Sul</option>
+										<option value="MG">Minas Gerais</option>
+										<option value="PA">Pará</option>
+										<option value="PB">Paraíba</option>
+										<option value="PR">Paraná</option>
+										<option value="PE">Pernambuco</option>
+										<option value="PI">Piauí</option>
+										<option value="RJ">Rio de Janeiro</option>
+										<option value="RN">Rio Grande do Norte</option>
+										<option value="RS">Rio Grande do Sul</option>
+										<option value="RO">Rondônia</option>
+										<option value="RR">Roraima</option>
+										<option value="SC">Santa Catarina</option>
+										<option value="SP">São Paulo</option>
+										<option value="SE">Sergipe</option>
+										<option value="TO">Tocantins</option>
+								</select></br>
+
+				</fieldset></br>
+
+				<input type="submit" value="Cadastrar" />
+				<input type="reset" value="Limpar">	
+
+			</form>
+			
+		</section>
+
+		<footer>
+			<article align="right">
+				<h3>Contato do desenvolverdor: </h3>
+				<p>Nome: Pedro Henrique</p>
+				<p>email: drinhouo@gmail.com</p>
+				<p>Tel: 3265-9874</p>
+			</article>
+		</footer>
+
+	</body>
+</html>
